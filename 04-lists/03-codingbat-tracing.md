@@ -51,3 +51,21 @@ def double_23(list_1: list) -> bool:
     else:
         return False
 ```
+
+### lucky13
+Given a list, if any number in the list is 1 or 3, return False. If not, return True.
+
+```
+lucky13([1, 2, 2]) → False
+lucky13([3, 2, 3, 2]) → False
+lucky13([2, 4, 2]) → True
+```
+Solutions
+
+```python
+def lucky13(nums):
+  for num in nums:
+    if num == 1 or num == 3:
+      return False
+  return True
+```
