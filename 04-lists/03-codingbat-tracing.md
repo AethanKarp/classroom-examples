@@ -32,3 +32,23 @@ def double(n: int) -> int:
 
 End example
 ---
+
+### swapEnds
+Create a list that swaps the places of the last term and the first term
+```
+swapEnds([1, 2, 3]) → [3, 2, 1]
+swapEnds([5, 11, 9]) → [9, 11, 5]
+swapEnds([7, 0, 0]) → [0, 0, 7]
+```
+Solutions:
+
+```python
+def swapEnds(nums):
+  newlist = []
+  newlist.append(nums[-1])
+  for i in range(len(nums)):
+    if i < len(nums) - 1 and i > 0:
+      newlist.append(nums[i])
+  newlist.append(nums[0])
+  return newlist
+```
