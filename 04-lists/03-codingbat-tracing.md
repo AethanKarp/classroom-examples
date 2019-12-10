@@ -32,3 +32,23 @@ def double(n: int) -> int:
 
 End example
 ---
+
+### plusTwo
+Create a function that will return a list that has the first two terms of both given lists.
+```
+
+plusTwo([1, 2, 3], [4, 5, 6]) → [1, 2, 4, 5]
+plusTwo([7, 7, 7], [3, 8, 0]) → [7, 7, 3, 8]
+plusTwo([5, 2, 9], [1, 4, 5]) → [5, 2, 1, 4]
+```
+Solutions:
+
+```python
+def plusTwo(a, b):
+  newlist = []
+  newlist.append(a[0])
+  newlist.append(a[1])
+  newlist.append(b[0])
+  newlist.append(b[1])
+  return newlist
+```
